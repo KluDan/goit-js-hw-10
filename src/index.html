@@ -4,13 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 10</title>
+    <link rel="stylesheet" href="style.css">
+    <base target="_blank">
   </head>
   <body>
-    <select class="breed-select"></select>
-    <p class="loader">Loading data, please wait...</p>
-    <p class="error">Oops! Something went wrong! Try reloading the page!</p>
-    <div class="cat-info"></div>
-
+    <div class="container">
+      <header class="header">
+        <a href="index.html">
+          <img src="./image/logo.png" alt="Logo" width="50" height="50">
+        </a>
+        <ul class="menu">
+          <li class="menu-item">home page</li>
+          <li class="menu-item">gallery</li>
+          <li class="menu-item">about us</li>
+          <li class="menu-item">links</li>
+          <li class="menu-item">contacts</li>
+        </ul>
+      </header>
+      <main class="main">
+        <section class="hero_section">
+          <div class="hero_main">
+            <div class="hero_main-block">
+              <h1 class="hero-title">you can <span>find</span> your cutest <span>paw</span> here</h1>
+            </div>
+            <div class="cat-info hidden"></div>
+          </div>
+          <div class="hero_search-block">
+            <p>Choose a breed:</p>
+            <select name="cats" class="breed-select hidden" id="breed-select"></select>
+            <div class="loader"></div>
+          </div>
+        </section>
+      </main>  
+    </div>
+    
     <script src="index.js" type="module"></script>
   </body>
 </html>
