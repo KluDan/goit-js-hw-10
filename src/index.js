@@ -54,10 +54,6 @@ fetchBreeds().then(renderSelect).catch(showError);
           </div>
         `;
     }
-  
-  catPhoto.addEventListener('click', ()=>{
-
-  })
     
     function showError(){
       Notify.failure('Oops! Something went wrong! Try reloading the page!');
